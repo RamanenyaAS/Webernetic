@@ -51,6 +51,7 @@
 }
 
 .overlay{
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -159,3 +160,6 @@
   line-height: 27.32px;
   padding-bottom: 36px;
 }
+
+
+

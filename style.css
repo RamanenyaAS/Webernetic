@@ -48,3 +48,100 @@
 .right-block__image {
   border-radius: 10px;
 }
+
+.overlay {
+  width: 500px;
+  background-color: #F0F4FC;
+  font-family: Manrope;
+}
+
+.modal-overlay {
+  position: relative;
+  width: 452px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.modal-overlay__image {
+  width: 52px;
+  position: absolute;
+  right: 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__title {
+  color: #323232;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32.78px;
+  padding: 56px 0px 18px;
+}
+
+.form__input {
+  background-color: #D7E2F6;
+  border: none;
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.form__input::placeholder {
+  color: #1F4284;
+}
+
+/* я не понимаю что с child почему тут 2, а не 1 */
+.form__input:nth-child(2) {
+  margin-bottom: 4px;
+}
+
+.form__button {
+  border: none;
+  border-radius: 4px;
+  padding: 18px 12px;
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28.8px;
+}
+
+/* тут вообще 6-ой child хотя должен быть 1 🤯. Почему то оно считает детей самой form*/
+.form__button:nth-child(6) {
+  margin-bottom: 4px;
+  background-color: #244C98;
+  color: #FFFFFF;
+}
+
+.form__button:last-child {
+  background: transparent;
+  border: 1px solid #244C98;
+  color: #244C98;
+}
+
+.form-block {
+  display: flex;
+  gap: 14px;
+  padding: 24px 0px;
+}
+
+.form-block__input {
+  width: 24px;
+  border: 2px solid #323232;
+}
+
+.form-block__text {
+  color: #323232;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.59px;
+}
+
+.form__info {
+  color: #244C98;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 27.32px;
+  padding-bottom: 36px;
+}
